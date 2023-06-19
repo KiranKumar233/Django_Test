@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAQ</title>
+    <style>
+        body{
+            background-color: rgb(193, 216, 237);
+        }
+        .layout{
+            width: 1000px;
+            margin: auto;
+        }
+        .accordion{
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: rgb(249, 250, 249);
+            border-radius: 10px;
+        }
+        .accordion__question p{
+            margin: 5px;
+            padding: 0;
+            font-family: Verdana;
+            font-size: 20px;
+        }
+        .accordion__answer p{
+            margin: 5px;
+            padding: 10px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(255, 255, 255);
+            background: rgb(89, 91, 90);
+            border-radius: 10px; 
+        }
+        .accordion:hover{
+            cursor: pointer;
+        }
+        .accordion__answer {
+            display: none;
+        } 
+        .accordion.active .accordion__answer {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color:rgb(0, 13, 0); text-align:center">HELP & SUPPORT</h2>
+    <div class="layout">
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Q. When should I register?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    A.Most courses are offered at least 3 times during the year. Certain courses can fill up quickly, so be sure to register early.
+                </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Q. My payment did not go through. What do I do?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    We apologize for this inconvenience. We encourage you to reach out to your financial institution as further permissions may be needed to complete the payment. You are also welcome to write to online@sothebysinstitute.com for further guidance. Please wait a full 24 hours before trying again. A strong Internet connection and up-to-date browser are strongly recommended.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Q. Do you provide financial assistance or payment plans?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    A.As noncredit courses, our online courses are not eligible for state or federal financial aid. Some students seek professional development support from their employer or from external scholarships. In the United States, fees paid for professional development are deductible from your personal income taxes to the extent permitted by current law.
+While we do not offer automatic payment plans at this time, please reach out to online@sia.edu to discuss payment alternatives, such as wire transfers.
+                    
+                </p>
+
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Q. Can I get a refund if I am unable to attend my Online Course?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    A.In order to be granted a full tuition refund, you must cancel your registration by sending an email to online@sothebysinstitute.com by 5:00 pm (your local time) 5 full business days before the course’s start date.  Please note we are unable to reimburse for any currency conversion fees charged by your credit-card issuer.
+                </p>
+
+            </div>
+        </div>
+
+        
+        <div class="accordion">
+            <div class="accordion__question">
+                <p> Q. What are your Terms and Conditions?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    A. Visit our Terms and Conditions page for details.
+                    
+                </p>
+
+            </div>
+        </div>
+
+        
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>
+                    Q. I am registered. Now what?
+                </p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    
+                    A.
+You will receive a confirmation email with information on when and how you can access your course. Check the details.
+Two weeks before the course begins, you will be given access to the SIA Online Community, a learning and networking space. This space provides you with guides and tools for successful online learning, and gives you an opportunity to introduce yourself to fellow students from across the globe.
+Visit our How It Works page to learn more about the online experience.
+Read about our online students’ experiences on our Student Stories page.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let answers=document.querySelectorAll(".accordion");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

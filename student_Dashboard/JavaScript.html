@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <title>HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style media="screen">
+
+body{
+        background-image: url(./images/javascript_bg.jpg);
+        background-size: 2000px 1000px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+      }
+
+      nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 220px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+ 
+ 
+
+    </style>
+
+  </head>
+  <body>
+    <nav style="position: absolute;">
+      <ul>
+        <li><a href="#" class="logo"><img src="./images/logo.jpg" alt="">
+          <span class="nav-item">Student Dashboard</span></a></li>
+        <li><a href="#">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-user"></i>
+          <span class="nav-item">Profile</span>
+        </a></li>
+        
+    
+        <li><a href=""><i class="fas fa-chart-bar"></i>
+        <span class="nav-item">Courese</span>
+        <li><a href=""><i class="fas fa-cog"></i>
+        <span class="nav-item">Compiler</span>
+    
+        
+      <li><a href="">
+        <i class="fas fa-user"></i>
+        <span class="nav-item">about</span>
+      </a></li>
+
+      <li>
+        <a href="#">
+            <span class="icon"><i class="fas fa-cog"></i></span>
+            <span class="item">Settings</span>
+        </a>
+    </li>
+
+
+      <li><a href="" class="Logout"><i class="fas fa-sign-out-alt"></i>
+      <span class="nav-item">Logout</span>
+    </a></li>
+      </ul>
+    </nav>
+      <!-- course section starts here -->
+
+      <section id="course" style="padding-left: 15%;">
+        <div class="featured-course-container">
+          <div class="featured-course-video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+          <div class="featured-course-content">
+            <div class="small-heading white">
+              <span><i class="fa fa-circle white"></i></span>
+              Welcome to the future of technology
+            </div>
+            <div class="featured-course-title"><h3>We can start learning JavaScript</h3></div>
+            <div class="featured-course-desc" id="e2">JavaScript is a dynamic computer programming language.
+              It is lightweight and most commonly used as a part of web pages,
+              whose implementations allow client-side script to interact with the user and make dynamic pages.</div>
+              <div class="featured-course-icons-container">
+                <div class="icons-row">
+                  <div class="icon-heading">
+                    <span><i class="fa fa-check-circle blue"></i></span>
+                    What is JS.
+                  </div>
+                  <div class="icon-heading">
+                    <span><i class="fa fa-check-circle blue"></i></span>
+                    JS Objects.
+                  </div>
+                </div>
+                <div class="icons-row">
+                  <div class="icon-heading">
+                    <span><i class="fa fa-check-circle blue"></i></span>
+                    JS Functions.
+                  </div>
+                  <div class="icon-heading">
+                    <span><i class="fa fa-check-circle blue"></i></span>
+                    JS HTML DOM.
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-blue" onclick="window.open('javascript.pdf','_blank')">Get More</button>
+              <a href="{% url 'compiler' %}" class="btn btn-success">Run Code</a>
+            </div>
+        </div>
+        <div class="more-course-container">
+          <div class="course">
+            <div class="course-img"><img src="./images/pic8.jpg" alt="" style="width:100%;height:100%;"></div>
+            <div class="course-body" id="l1">
+              <div class="course-category text-success font-weight-bold" id="l2">Web Development</div>
+              <div class="course-title text-dark">JS Web Development</div>
+              <div class="course-icons-row">
+                <div class="course-icon-heading yellow">
+                  <span><i class="fa fa-user yellow"></i></span>
+                  Begineers..
+                </div>
+                <div class="course-icon-heading yellow">
+                  <span><i class="fa fa-hourglass yellow"></i></span>
+                  1h 30m.
+                </div>
+              </div>
+              <button class="btn btn-blue course-btn">Watch on YouTube<i class="fab fa-youtube"></i></button>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-img"><img src="./images/pic7.jpg" alt="" style="width:100%;height:120%;"></div>
+            <div class="course-body">
+              <div class="course-category text-warning font-weight-bold">Basics of JS</div>
+              <div class="course-title">JS  Web Design</div>
+              <div class="course-icons-row">
+                <div class="course-icon-heading yellow">
+                  <span><i class="fa fa-user yellow"></i></span>
+                  Intermediate..
+                </div>
+                <div class="course-icon-heading yellow">
+                  <span><i class="fa fa-hourglass yellow"></i></span>
+                  5h 10m.
+                </div>
+              </div>
+              <button class="btn btn-blue course-btn">Watch on YouTube<i class="fab fa-youtube"></i></button>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-img"><img src="./images/pic9.jpg" alt="" style="width:100%;height:105%;"></div>
+            <div class="course-body" id="x1">
+              <div class="course-category text-danger font-weight-bold">Technology</div>
+              <div class="course-title">Complete JS </div>
+              <div class="course-icons-row">
+                <div class="course-icon-heading yellow">
+                  <span><i class="fa fa-user yellow"></i></span>
+                  Begineers..
+                </div>
+                <div class="course-icon-heading yellow">
+                  <span><i class="fa fa-hourglass yellow"></i></span>
+                  3h 25m.
+                </div>
+              </div>
+              <button class="btn btn-blue course-btn">Watch on YouTube<i class="fab fa-youtube"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- course section ends here -->
+
+  </body>
+</html>
